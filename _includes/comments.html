@@ -153,28 +153,27 @@
     {% when "utterances" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section id="utterances-comments"></section>
-    {% when "gittalk" %}
-      <section id="gitalk-comments">
-      {% if site.gittalk.clientID and site.gittalk.clientSecret %}
+    {% when "gitalk" %}
+      <section id="gitalk-comments"></section>
+      {% if site.gitalk.clientID and site.gitalk.clientSecret %}
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
       <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
       <script >
         const gitalk = new Gitalk({
-          clientID: '{{ site.gittalk.clientID }}',
-          clientSecret: "{{ site.gittalk.clientSecret }}",
-          repo: "{{ site.gittalk.repository }}",
-          owner: "{{ site.gittalk.owner }}",
-          admin: ["{{ site.gittalk.admin | split: ','  | join: '","'}}"],
+          clientID: '{{ site.gitalk.clientID }}',
+          clientSecret: "{{ site.gitalk.clientSecret }}",
+          repo: "{{ site.gitalk.repository }}",
+          owner: "{{ site.gitalk.owner }}",
+          admin: ["{{ site.gitalk.admin | split: ','  | join: '","'}}"],
           id: "{{ page.url }}",    // Ensure uniqueness and length less than 50 
           distractionFreeMode: false,  // Facebook-like distraction free mode
-          perPage: 100
+          perPage: 20
         });
 
         gitalk.render('gitalk-comments')
       </script>
 
       {% endif %}
-      </section>
     {% when "custom" %}
       <section id="custom-comments"></section>
   {% endcase %}

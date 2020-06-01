@@ -22,8 +22,16 @@ author_profile: false
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title">{{ page.title }}</h1>
     {% endunless %}
-    {% for post in page.posts %}
+    {% if paginator %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+    {% for post in posts %}
       {% include archive-single.html %}
     {% endfor %}
+    {% if paginator %}
+    {% include paginator.html %}
+    {% endif %}
   </div>
 </div>

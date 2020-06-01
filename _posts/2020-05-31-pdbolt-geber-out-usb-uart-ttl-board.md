@@ -1,5 +1,6 @@
 ---
-layout: single
+layout: posts
+comments: true
 title: "PDBoLT gerber out USB to UART/TTL board with 1.25 - 5.0 IO voltage support"
 categories:
   - UART
@@ -15,8 +16,5 @@ tags:
   - voltage
 ---
 
-Nested and mixed lists are an interesting beast. It's a corner case to make sure that
-
-* Lists within lists do not break the ordered list numbering order
-* Your list styles go deep enough.
+The coming USB to UART/TTL converter board can support multiple IO voltage , from 1.25V to 5.0V.
 
