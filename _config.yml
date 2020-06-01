@@ -31,7 +31,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               :  # false (default), "gittalk" "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "gittalk" # false (default), "gittalk" "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -50,11 +50,11 @@ comments:
   gittalk:
     # Note: A GitHub Application is needed for authorization, if you don't have one, going to https://github.com/settings/applications/new register a new one.
     # You must specify the website domain url in the Authorization callback URL field.
-    clientID:  # GitHub Application Client ID
-    clientSecret:   # GitHub Application Client Secret,
-    repository: blog-comments  # Storage gittalk's repository
-    owner: colynn  # GitHub repo owner,
-    admin: colynn  # GitHub repo owner and collaborators, only these guys can initialize github issues eg. 'colynn,daattali'
+    clientID:  "12ceb9d59eafc59a1fbe" # GitHub Application Client ID
+    clientSecret:  "2f326cd91b22571c5b30bf6010dcc5dd1e52be36" # GitHub Application Client Secret,
+    repository: "sitecomments"   # Storage gittalk's repository
+    owner: "pdbolt"  # GitHub repo owner,
+    admin: "pdbolt"  # GitHub repo owner and collaborators, only these guys can initialize github issues eg. 'colynn,daattali'
 reCaptcha:
   siteKey                :
   secret                 :
