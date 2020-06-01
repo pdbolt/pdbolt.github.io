@@ -12,13 +12,13 @@ layout: archive
     <div id="gitalk-container"></div>
     <script>
     var gitalk = new Gitalk({
-        id: 'page.date', //在官网描述中，id默认为location.href，即评论后回到当前页面。所以你可以直接屏蔽这行代码
-        clientID: '12ceb9d59eafc59a1fbe', //你需要参考yizibi的文章来申请Cliend ID和下方的ClientSecret
+        id: 'page.date', //test
+        clientID: '12ceb9d59eafc59a1fbe', //ID
         clientSecret: '2f326cd91b22571c5b30bf6010dcc5dd1e52be36',
-        repo: 'sitecomments',//这里可以直接填你的仓库名称
-        owner: 'pdbolt',//github用户名
-        admin: ['pdbolt'], //github用户名
-        labels: ['Gitalk'],//不用调整
+        repo: 'sitecomments',//repo
+        owner: 'pdbolt',//site
+        admin: ['pdbolt'], //user
+        labels: ['Gitalk'],//who
     })
     gitalk.render('gitalk-container')
     </script> 
