@@ -13,24 +13,29 @@ main:
   # - title: "Sample Collections"
   #   url: /collection-archive/
 
-sidebar-sample:
-  - title: "Parent Page A"
-    children:
-      - title: "Child Page A1"
-        url: /
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
+# products:
+#   - title: "Parent Page A"
+#     children:
+#       - title: "Child Page A1"
+#         url: /
+#         children:
+#           - title: "mmmm"
+#       - title: "Child Page A2"
+#         url: /
+#       - title: "Child Page A3"
+#         url: /
+#       - title: "Child Page A4"
+#         url: /
 
 products:
-  - title: "USB to UART/TTL boards"
+  - title: "PDUART V11"
     children:
-      - title: "CH340 multiple voltage USB A port board"
-        icon: "fas fa-fw fa-link"
-        url: /products/usb-ttl-uart-ch340-a-multiple-voltage/
+      # - title: "Introduction"
+      - title: "Pinout"
+        url: /products/pdbolt-pduart-ch340-usb-uart-multiple-voltage-pinout/
+        # icon: 
+      # - title: "Specifications"
+
   # - title: "USB PPPS HUB"
   #   children:
   #     - title: "4 port USB 3.0 programmable HUB"
@@ -39,3 +44,11 @@ products:
   #   children:
   #     - title: "ALL in one Link"
   #       url: /products/daplink-all-in-one/
+
+docs:
+  - title: "PDUART V11 Usage"
+    children:
+      # - title: "Introduction"
+      - title: "Pinout"
+        url: /products/pdbolt-pduart-ch340-usb-uart-multiple-voltage-pinout/
+      # - title: "Specifications"
